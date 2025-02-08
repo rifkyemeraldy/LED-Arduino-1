@@ -1,0 +1,29 @@
+{
+    "version": 1,
+    "author": "Rifky Emeraldy putra",
+    "editor": "wokwi",
+    "parts": [
+      { "type": "wokwi-arduino-uno", "id": "uno", "top": 19.8, "left": -10.2, "attrs": {} },
+      { "type": "wokwi-7segment", "id": "sevseg1", "top": -81.42, "left": 177.88, "attrs": {} },
+      {
+        "type": "wokwi-resistor",
+        "id": "r1",
+        "top": -120.85,
+        "left": 220.8,
+        "attrs": { "value": "1000" }
+      }
+    ],
+    "connections": [
+      [ "sevseg1:E", "uno:7", "green", [ "v0" ] ],
+      [ "sevseg1:D", "uno:6", "green", [ "v0" ] ],
+      [ "sevseg1:F", "uno:8", "green", [ "v-18.36", "h-28.8", "v124.8" ] ],
+      [ "sevseg1:G", "uno:9", "green", [ "v-8.76", "h-28.8" ] ],
+      [ "sevseg1:COM.2", "r1:1", "green", [ "h0", "v-37.56" ] ],
+      [ "sevseg1:DP", "uno:5", "green", [ "v9.6", "h-19.2" ] ],
+      [ "sevseg1:C", "uno:4", "green", [ "v0" ] ],
+      [ "sevseg1:B", "uno:3", "green", [ "v-8.76", "h9.6", "v96", "h-9.6" ] ],
+      [ "sevseg1:A", "uno:2", "green", [ "v-27.96", "h28.8", "v115.2", "h-19.2", "v9.6" ] ],
+      [ "r1:2", "uno:5V", "green", [ "v0", "h18", "v355.2", "h-144", "v-9.6" ] ]
+    ],
+    "dependencies": {}
+  }
