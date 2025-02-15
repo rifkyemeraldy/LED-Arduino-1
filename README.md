@@ -4,4 +4,4 @@ Di dalam projek ini bisa mensimulasikan projek Arduino dengan komponen LED Merah
 
 Lampu LED dapat menyala secara bergantian
 
-Ururtan menyala seperti lampu lalu lintas
+Urutan menyala seperti lampu lalu lintas
